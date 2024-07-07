@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Bill Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza World</h1>
+        
+        <p>anna street,tiruppur  
+        website:www.pizzaworld.com
+        contact:9347676456</p>
+        <form id="pizza-form">
+            <div class="form-group">
+                <label for="pizza-type">Pizza Type:</label>
+                <select id="pizza-type" name="pizza-type">
+                    <option value="tandoori Panneer">tandoori Panneer</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="chicken">chicken</option>
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pizza-size">Size:</label>
+                <select id="pizza-size" name="pizza-size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="toppings">Toppings:</label>
+                <div>
+                    <input type="checkbox" id="cheese" name="toppings" value="cheese">
+                    <label for="cheese">Extra Cheese</label>
+                </div>
+                <input type="checkbox" id="onion" name="toppings" value="onion">
+                    <label for="onion">Onion</label>
+                <div>
+                    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="olives" name="toppings" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+            </div>
+            <button type="button" onclick="calculateBill()">Calculate Bill</button>
+        </form>
+        <div id="bill-output">
+            <h2>Your Bill</h2>
+            <p id="bill-details"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
